@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IND::EX::</title>
+<meta tag="viewport" content="width=device-width, initial-scale-1.0">
+
+<style>
+
+	body{color:#;margin:0px;}
+
+a.tmblr{padding: 0 10px;}
+.random-bg {background: #66cc97 none repeat scroll 0 0;}
+
+.main {background-color: lightgreen;border-radius: 4px;display: block;margin: 110px auto 0;padding: 10px;text-align: center;width: 50%;min-height:210px;box-shadow: 0 1px 10px #000;}
+
+
+
+a {
+  background: rgba(0, 0, 0, 0) linear-gradient(black, brown, black) repeat scroll 0 0;
+  border: 1px solid #000;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #fff;
+  float: left;
+  font-family: arial;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 9px 8px;
+  text-decoration: none;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0) linear-gradient(brown, black, brown) repeat scroll 0 0;
+  box-shadow: 1px 2px 3px #000; -moz-box-shadow: 1px 2px 3px #000;-o-box-shadow: 1px 2px 3px #000;
+  -webkit-box-shadow: 1px 2px 3px #000;
+  color: #fff;
+  text-shadow: 4px 4px 6px #000;
+  -moz-text-shadow:4px 4px 6px #000;-o-text-shadow:4px 4px 6px #000;-webkit-text-shadow:4px 4px 6px #000;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.new-qt {background: rgba(0, 0, 0, 0) linear-gradient(brown, black, brown) repeat scroll 0 0;border: 1px solid #000;border-radius: 4px;-moz-border-radius: 4px;-o-border-radius: 4px;-webkit-border-radius: 4px;color: #fff;cursor: pointer;float: right;font-size: 15px;font-weight: normal;padding: 8px 4px;text-decoration: none;margin-top:5px;}
+
+.new-qt:hover {background: rgba(0, 0, 0, 0) linear-gradient(black, brown, black) repeat scroll 0 0;transition:all .2s ease-in-out;box-shadow: 1px 2px 3px #000; -moz-box-shadow: 1px 2px 3px #000;-o-box-shadow: 1px 2px 3px #000;-webkit-box-shadow: 1px 2px 3px #000;}
+
+
+#author {color: #fff;float: right;font-family: arial;font-size: 13px;font-style: italic;font-weight: bold;text-shadow: 1px 1px 4px #000;-webkit-text-shadow: 1px 1px 4px #000;-o-text-shadow: 1px 1px 4px #000;-moz-text-shadow: 1px 1px 4px #000;}
+#author::before {content: "- ";position: relative;}
+#quote {color: #fff;font-family: arial;font-size: 26px;text-shadow: 1px 2px 3px #000;-moz-text-shadow: 1px 2px 3px #000;-o-text-shadow: 1px 2px 3px #000;-webkit-text-shadow: 1px 2px 3px #000;}
+.footer-section {display: block;margin: -60px auto;width: 50%;}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+#quote {font-size: 21px;}
+.main{width:90%;}
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+#quote {font-size: 21px;}
+.main{width:90%;}
+}
+@media screen and (max-width: 768px) and (min-width: 640px) {
+#quote {font-size: 21px;}
+.main{width:90%;}
+}
+</style>
+<body class="random-bg">
+  <div class="main" id="qbody">
+<div class="quotation">
+    <div id="quote"></div>
+    <br>
+    <div id="author"></div>
+ <br> <br>
+ </div>
+ <div style="clear:both"></div>
+    </div>
+   
+<footer class="footer-section">
+<a href="#" id="tweet-this-post" title="Tweet this Quote!">Tweet This</a> &nbsp;&nbsp;&nbsp;
+<button class="new-qt" title="New Quote!">New Quote</button>   
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var quotArr = [
+    {"quote":"Before you can win, you have to believe you are worthy.", "author":"Mike Ditka"},
+
+    {"quote":"The pessimist sees difficulty in every opportunity. The optimist sees the opportunity in every difficulty.", "author":"Winston Churchill"},
+
+     {"quote":"Before you can win, you have to believe you are worthy.", "author":"Mike Ditka"},
+
+    {"quote":"The pessimist sees difficulty in every opportunity. The optimist sees the opportunity in every difficulty.", "author":"Winston Churchill"},
+
+    {"quote":"Failure will never overtake me if my determination to succeed is strong enough.","author": "Og Mandino"},
+
+    {"quote":"The man who has confidence in himself gains the confidence of others.", "author":"Hasidic Proverb"},
+    {"quote":"Mind is never a problem. Mindset is","author":"Narendra Modi"},
+
+    {"quote":"When I hear somebody sigh, 'Life is hard,' I am always tempted to ask, 'Compared to what?", "author":"Sydney Harris"},
+
+    {"quote":"Nurture your mind with great thoughts. To believe in the heroic makes heroes.", "author":"Benjamin Disraeli"},
+
+    {"quote":"The real opportunity for success lies within the person and not in the job","author": "Zig Ziglar"},
+    {"quote":"Look at the sparrows; they do not know what they will do in the next moment. Let us literally", "author":"M K Gandhi"},
+
+    {"quote":"The difference between a successful person and others is not lack of strength not a lack of knowledge but rather a lack of will.","author":"Vince Lombardi"},
+
+    {"quote":"Don't worry about failures, worry about the chances you miss when you don't even try.", "author":"Jack Canfield"},
+
+    {"quote":"Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.", "author":"Carl Bard"},
+
+    {"quote":"Life has two rules: 1 Never quit 2 Always remember rule 1.", "author":"A.K. Shukla"},
+
+    {"quote":"Many of life's failures are experienced by people who did not realize how close they were to success when they gave up.", "author":"Thomas Edison"},
+
+    {"quote":"The journey of a thousand miles begins with one step.", "author":"Lao Tzu"},
+
+    {"quote":"Winners don't do different things; they do things differently", "author":"Shiv Khera"},
+
+    {"quote":"Arise, Awake and Stop not until the goal is reached.", "author":"Swami Vivekananda"},
+
+    {"quote":"All that we are is the result of what we have thought. The mind is everything. What we think we become.", "author":"Gautama Buddha"},
+
+    ];
+
+var colorArr = ["#D6A4A4","#ED4264", "#99EDBC", "#3D7EAA", "#134E5E", "#1D976C","#F7BB97", 	"#88512F", "#F09819", "#DD2476"];
+
+var i = Math.floor((Math.random() * 20) + 1);   
+$(document).ready(function(){
+
+var quoteVal=quotArr[i]['quote'];
+var authorVal=quotArr[i]['author'];
+
+document.getElementById('quote').innerHTML=quoteVal;
+document.getElementById('author').innerHTML=authorVal; 
+  
+$('.new-qt').on('click', function(){
+	//$('body').addClass('dynamic-'+i)";
+   //"alert(i);
+   i = Math.floor((Math.random() * 20) + 1);
+   quoteVal=quotArr[i]['quote'];
+   authorVal=quotArr[i]['author'];
+   var bgColor = colorArr[i];
+
+ 	
+    document.getElementById('quote').innerHTML=quoteVal;
+    document.getElementById('author').innerHTML=authorVal; 
+    document.getElementById('qbody').style.backgroundColor = bgColor;
+  
+  });
+   
+
+
+
+var getPostTitle=document.getElementById("quote").innerHTML,
+linkElement=document.getElementById("tweet-this-post");
+
+$(linkElement).click(function(event){
+
+  event.preventDefault();
+
+  var tweetedLink = window.location.href;
+
+
+var quoteValLen=quoteVal.length; 
+var authorValLen=authorVal.length;
+var tweetChar=quoteValLen+authorValLen;
+//alert(tweetChar);
+var quoteValid = "";
+
+if(tweetChar<=139)
+{
+ quoteValid = quoteVal;
+}
+
+quoteValid=quoteVal.substring(0, 95) + "...";
+
+window.open("http://twitter.com/intent/tweet?url=" + authorVal + "&text=" +'"' +quoteValid+ '" - '+authorVal+ "&via=ajeet-shukla&", "twitterwindow", "height=450, width=550, toolbar=0, location=0, menubar=0, directories=0, scrollbars=0");
+});  
+});
+
+</script> 
+  </body>
+ </html>
