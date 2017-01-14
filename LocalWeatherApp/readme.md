@@ -2,7 +2,7 @@
 It is a Javascript application developed as part of my FCC course project
 
 
-
+   
 Here's the image of our application:
 
  
